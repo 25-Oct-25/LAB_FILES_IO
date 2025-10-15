@@ -1,0 +1,7 @@
+1- a - 2026-12-11 00:00:00 - DONE 
+1- homework - 2025-10-11 00:00:00 - DONE 
+1- homework - 2027-12-11 00:00:00 - DONE 
+2- gym - 2025-10-15 00:00:00 - DONE 
+1- Gym - 2025-10-15 00:00:00 - DONE 
+1- doing homework - 2025-10-15 00:00:00 - DONE 
+2- sleap early - 2025-10-15 00:00:00 - NOT DONE 
