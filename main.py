@@ -1,9 +1,11 @@
+path ="/Users/nawaf/Documents/python-camp/PY/LAB_FILES_IO/to_do.txt"
+
 def add_item(item):
-    with open ("/Users/nawaf/Documents/python-camp/PY/LAB_FILES_IO/to_do.txt", "a", encoding="utf-8") as file:
+    with open (path, "a", encoding="utf-8") as file:
         file.write(item + "\n")        
 
 def view_items():
-    with open ("/Users/nawaf/Documents/python-camp/PY/LAB_FILES_IO/to_do.txt", "r", encoding ="utf-8") as file:
+    with open (path, "r", encoding ="utf-8") as file:
         items = file.readlines()
         for index, item in enumerate(items, start=1):
             print(f"{index}. {item.strip()}")
