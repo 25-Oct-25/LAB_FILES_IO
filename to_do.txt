@@ -1,0 +1,2 @@
+my list note
+C:\Users\habib\AppData\Local\Programs\Python\Python311\python.exe "c:/Users/habib/Documents/labs/lab io/LAB_FILES_IO/bonus.py"
