@@ -21,5 +21,5 @@
   1- Go to Gym - 2023-08-05 08:00:00 - DONE
   2- Visit Grandma - 2023-08-08 21:00:00 - NOT DONE
   ```
-- User can mark a specific Task as Done.
+- User can marشk a specific Task as Done.
 - User can search in his tasks using the title.
