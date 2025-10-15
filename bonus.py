@@ -42,7 +42,7 @@ while True:
     general_list.append(to_do_list)
 
     #test
-    print(f'Your task date is {task_date}')
+    #print(f'Your task date is {task_date}')
 
     file = open("to-do list upgrade.txt", "a+", encoding="UTF -8")
     file.write(str(i))
@@ -54,5 +54,12 @@ while True:
     print(file.readline())
     file.close()
 
+#To search inside the dictionry by title
+title_input= input("Write a task you search: ")
+for task in general_list:
+    if general_list["title"] == title_input:
+        print("The task in the list")
+    else: print("The task out of the list")
+
 #test
-print(general_list)
+#print(general_list)
