@@ -3,7 +3,6 @@ from datetime import datetime
 
 file_name = "to_do.json"
 
-# قراءة البيانات من الملف أو إنشاء قائمة فارغة إذا الملف غير موجود
 try:
     with open(file_name, "r", encoding="utf-8") as file:
         todos = json.load(file)
@@ -11,7 +10,7 @@ except FileNotFoundError:
     todos = []
 
 print("Welcome to the To-Do program (JSON Version)!\n")
-
+  # Display the main menu options
 while True:
     print("Options:")
     print("1. Add new task 🖊️ :")
@@ -23,19 +22,19 @@ while True:
     choice = input("Choose (1-5): ").strip()
 
     if choice == "1":
-        # إضافة مهمة جديدة
+       # Add a new task
         title = input("Enter task title: ").strip()
         date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         todo = {"title": title, "date_time": date_time, "done": False}
         todos.append(todo)
 
-        # حفظ الملف
+        # Save the file
         with open(file_name, "w", encoding="utf-8") as file:
             json.dump(todos, file, indent=4)
         print(f"'{title}' added successfully!\n")
 
     elif choice == "2":
-        # عرض كل المهام
+        # Show all tasks
         if not todos:
             print("Your list is empty 📭.\n")
         else:
@@ -46,7 +45,7 @@ while True:
             print()
 
     elif choice == "3":
-        # تعليم مهمة كمنجزة
+       # Mark a task as done
         if not todos:
             print("No tasks to mark as done.\n")
         else:
@@ -79,6 +78,7 @@ while True:
     elif choice == "5":
         print(" Well done! Thanks for using the program!🏆")
         break
-
+    
+ # Invalid menu option
     else:
         print("Invalid choice❗Please enter 1–5.\n")
